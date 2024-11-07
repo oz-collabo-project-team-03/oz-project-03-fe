@@ -1,5 +1,3 @@
-# oz_project_03_fe
-
 <h1>수행쌤</h1>
 <h3>수행쌤 - 맞춤형 수행평가 주제 추천 서비스</h3>
 
@@ -12,8 +10,8 @@
   <img src="https://img.shields.io/badge/prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=black"/>
   <img src="https://img.shields.io/badge/eslint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white"/>
   <img src="https://img.shields.io/badge/tailwind-06B6D4?style=for-the-badge&logo=tailwind Css&logoColor=white"/>
-  <img src="https://img.shields.io/badge/-Mock Service Worker-FF6A33?style=flat&logo=mockserviceworker&logoColor=white"/>
-  <img src="https://img.shields.io/badge/-React Query-FF4154?style=flat&logo=reactquery&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Mock Service Worker-FF6A33?style=for-the-badge&logo=mockserviceworker&logoColor=white"/>
+  <img src="https://img.shields.io/badge/React Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white"/>
  
 
 ## MEMBERS
