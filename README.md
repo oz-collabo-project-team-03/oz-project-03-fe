@@ -1,7 +1,7 @@
 <h1>수행쌤</h1>
 <h3>수행쌤 - 맞춤형 수행평가 주제 추천 서비스</h3>
 
-<br/><br/><br/><br/><br/>
+<br/><br/>
 
 ## 📚 STACKS
 
@@ -16,7 +16,7 @@
   <img src="https://img.shields.io/badge/React Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white"/>
  
 
-<br/>
+<br/><br/>
 
 ## MEMBERS
 
@@ -49,7 +49,7 @@
   </tr>
 </table>
 
-<br/>
+<br/><br/>
 
 ## COMMIT CONVENTION
 
