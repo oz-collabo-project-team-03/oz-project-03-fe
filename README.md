@@ -1,6 +1,8 @@
 <h1>수행쌤</h1>
 <h3>수행쌤 - 맞춤형 수행평가 주제 추천 서비스</h3>
 
+<br/>
+
 ## 📚 STACKS
 
 <div>
@@ -13,6 +15,8 @@
   <img src="https://img.shields.io/badge/Mock Service Worker-FF6A33?style=for-the-badge&logo=mockserviceworker&logoColor=white"/>
   <img src="https://img.shields.io/badge/React Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white"/>
  
+
+<br/>
 
 ## MEMBERS
 
@@ -45,17 +49,22 @@
   </tr>
 </table>
 
+<br/>
+
 ## COMMIT CONVENTION
 
 | 타입             | 설명                                              |
 | ---------------- | ------------------------------------------------- |
 | ✨ **Feat:**     | 새로운 기능 추가                                  |
-| 🚑 **Fix:**      | 버그 수정                                         |
-| 📚 **Docs:**     | 문서 수정                                         |
-| 💄 **Style:**    | 코드 포맷팅, 세미콜론 누락, 코드 변경이 없는 경우 |
-| ♻️ **Refactor:** | 코드 리팩토링                                     |
-| 🧪 **Test:**     | 테스트 코드, 리팩토링 테스트 코드 추가            |
-| 📰 **Chore:**    | 빌드 업무 수정, 패키지 매니저 수정                |
-| 💡 **Comment:**  | 필요한 주석 추가 및 변경                          |
-| 🚚 **Rename:**   | 파일 혹은 폴더명을 수정하거나 옮기는 경우         |
-| 🔥 **Remove:**   | 파일을 삭제하는 작업만 수행한 경우                |
+| 🍱 **Add:**      | 에셋 파일 추가                                    |
+| 🐛 **Fix:**      | 버그 수정                                         |
+| 🎨 **Design:**   | CSS 등 사용자 UI 디자인변경                        |
+| 💄 **Style:**     | UI, 스타일 관련 파일 추가 및 수정                  |
+| 📝 **Docs:**     | 문서 추가 및 수정                                  |
+| ♻️ **Refactor:** | 코드 리팩토링                                      |
+| 🤡 **Test:**     | 테스트 관련                                       |
+| 🚀 **Deploy:**   | 배포 관련                                         |
+| 💚 **Conf:**     | 필요한 주석 추가 및 변경                           |
+| 🩹 **Chore:**    | 기타작업                                          |
+| 🚚 **Rename:**   | 파일 혹은 폴더명 수정 또는 이동                    |
+| 🔥 **Remove:**    | 파일 또는 코드 삭제                               |
