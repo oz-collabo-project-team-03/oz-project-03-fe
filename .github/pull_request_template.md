@@ -13,8 +13,8 @@
 > - [ ] FEAT :sparkles:: 새로운 기능 구현
 > - [ ] ADD :bento:: 에셋 파일 추가
 > - [ ] FIX :bug:: 버그 수정
-> - [ ] DESIGN :art:: 문서 추가 및 수정
-> - [ ] STYLE :lipstick:: UI, 스타일 관련 파일 추가 및 수정
+> - [ ] DESIGN :art:: CSS 등 사용자 UI 디자인 변경
+> - [ ] STYLE :lipstick:: 코드 포맷팅, 코드 수정이 없음
 > - [ ] DOCS :memo:: 문서 추가 및 수정
 > - [ ] REFACTOR :recycle:: 코드 리팩토링
 > - [ ] TEST :clown_face:: 테스트 관련
