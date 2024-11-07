@@ -21,8 +21,8 @@
 > - [ ] DEPLOY :rocket:: 배포 관련
 > - [ ] CONF :green_heart:: 빌드, 환경 설정
 > - [ ] CHORE :adhesive_bandage:: 기타 작업
-> - [ ] RENAME :truck: 파일 혹은 폴더명 수정 또는 이동
-> - [ ] REMOVE :fire: 파일 또는 코드 삭제
+> - [ ] RENAME :truck:: 파일 혹은 폴더명 수정 또는 이동
+> - [ ] REMOVE :fire:: 파일 또는 코드 삭제
 
 > ### Description
 >
