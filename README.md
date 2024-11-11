@@ -14,7 +14,7 @@
   <img src="https://img.shields.io/badge/tailwind-06B6D4?style=for-the-badge&logo=tailwind Css&logoColor=white"/>
   <img src="https://img.shields.io/badge/Mock Service Worker-FF6A33?style=for-the-badge&logo=mockserviceworker&logoColor=white"/>
   <img src="https://img.shields.io/badge/React Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white"/>
- 
+
 
 <br/><br/>
 
@@ -53,18 +53,18 @@
 
 ## COMMIT CONVENTION
 
-| 타입             | 설명                                              |
-| ---------------- | ------------------------------------------------- |
-| ✨ **Feat:**     | 새로운 기능 추가                                  |
-| 🍱 **Add:**      | 에셋 파일 추가                                    |
-| 🐛 **Fix:**      | 버그 수정                                         |
-| 🎨 **Design:**   | CSS 등 사용자 UI 디자인변경                        |
-| 💄 **Style:**     | UI, 스타일 관련 파일 추가 및 수정                  |
-| 📝 **Docs:**     | 문서 추가 및 수정                                  |
-| ♻️ **Refactor:** | 코드 리팩토링                                      |
-| 🤡 **Test:**     | 테스트 관련                                       |
-| 🚀 **Deploy:**   | 배포 관련                                         |
-| 💚 **Conf:**     | 필요한 주석 추가 및 변경                           |
-| 🩹 **Chore:**    | 기타작업                                          |
-| 🚚 **Rename:**   | 파일 혹은 폴더명 수정 또는 이동                    |
-| 🔥 **Remove:**    | 파일 또는 코드 삭제                               |
+| 타입             | 설명                              |
+| ---------------- | --------------------------------- |
+| ✨ **Feat:**     | 새로운 기능 추가                  |
+| 🍱 **Add:**      | 에셋 파일 추가                    |
+| 🐛 **Fix:**      | 버그 수정                         |
+| 🎨 **Design:**   | CSS 등 사용자 UI 디자인변경       |
+| 💄 **Style:**    | UI, 스타일 관련 파일 추가 및 수정 |
+| 📝 **Docs:**     | 문서 추가 및 수정                 |
+| ♻️ **Refactor:** | 코드 리팩토링                     |
+| 🤡 **Test:**     | 테스트 관련                       |
+| 🚀 **Deploy:**   | 배포 관련                         |
+| 💚 **Conf:**     | 필요한 주석 추가 및 변경          |
+| 🩹 **Chore:**    | 기타작업                          |
+| 🚚 **Rename:**   | 파일 혹은 폴더명 수정 또는 이동   |
+| 🔥 **Remove:**   | 파일 또는 코드 삭제               |
