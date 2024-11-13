@@ -7,11 +7,18 @@ import homeActiveIcon from './navBar/home_active.svg';
 import plusActiveIcon from './navBar/student/plus_active.svg';
 
 import userActiveIcon from './navBar/teacher/user_Active.svg';
+
+import googleLogo from './login/google_login.svg';
+import kakaoLogo from './login/kakao_logo.png';
+import naverLogo from './login/naver_logo.svg';
 export {
   backIcon,
   chatActiveIcon,
   chatBubbleIcon,
+  googleLogo,
   homeActiveIcon,
+  kakaoLogo,
+  naverLogo,
   plusActiveIcon,
   userActiveIcon,
 };
