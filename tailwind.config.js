@@ -31,6 +31,9 @@ export default {
       },
       fontFamily: {
         pre: ['Pretendard Variable']
+      },
+      boxShadow: {
+        navShadow: '0px -4px 10px 0px rgba(142, 139, 139, 0.15)',
       }
 
     },
