@@ -17,19 +17,24 @@ export default {
         commuInputColor: "#F5F6F7",
         borderColor: "#F2EFFF",
         repleText: "#494949",
-        gray20Color: "#C6C6C6",
+        cancelButtonColor: "#C6C6C6",
         captionColor: "#A8A8A8",
-        btNavUnFocusColor: "#D9D9D9",
+        unFocusColor: "#D9D9D9",
         btNavFocusColor: "#121212",
         textMainColor: "#121212",
-        mainLogoText: "#2E2E2E",
-        heartButtonColor: "#F24822",
+        mainLogoTextColor: "#2E2E2E",
+        errorTextColor: "#F24822",
         deleteButtonColor: "#FF4141",
-        profileSelectColor: "#9747FF"
+        profileSelectColor: "#9747FF",
+        chatListHoverColor:"#F5F6F7"
         
       },
       fontFamily: {
-        pre: ['Pretendard Variable']
+        pre: ['Pretendard Variable'],
+        gMarket: ['GmarketSans']
+      },
+      boxShadow: {
+        navShadow: '0px -4px 10px 0px rgba(142, 139, 139, 0.15)',
       }
 
     },
