@@ -22,10 +22,11 @@ export default {
         btNavUnFocusColor: "#D9D9D9",
         btNavFocusColor: "#121212",
         textMainColor: "#121212",
-        mainLogoText: "#2E2E2E",
-        heartButtonColor: "#F24822",
+        mainLogoTextColor: "#2E2E2E",
+        errorTextColor: "#F24822",
         deleteButtonColor: "#FF4141",
-        profileSelectColor: "#9747FF"
+        profileSelectColor: "#9747FF",
+        chatListHoverColor:"#F5F6F7"
         
       },
       fontFamily: {
