@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import Button from '../../components/common/Button';
 import CheckBox from '../../components/common/CheckBox';
 import Terms from '../../components/terms/Terms';
 import { useToast } from '../../context/ToastContextProvider';
+import { useValidationCheck } from '../../hooks/useValidateAndProceed';
 import { privacyTerms, thirdPartyTerms } from '../../mocks/termsData';
 // 이용약관 페이지라는 뜻
 const TermsOfService = () => {
@@ -15,8 +15,6 @@ const TermsOfService = () => {
   const [isThirdPartyChecked, setIsThirdPartyChecked] = useState(false);
 
   const { showToast } = useToast();
-
-  const navigate = useNavigate();
 
   const togglePrivacyTerms = () => {
     setShowPrivacyTerms((prev) => !prev);
@@ -43,20 +41,19 @@ const TermsOfService = () => {
     setIsAllChecked(isPrivacyChecked && checked);
   };
 
-  const handleNext = () => {
-    if (!isAllChecked && !isPrivacyChecked && !isThirdPartyChecked) {
-      showToast('필수 이용약관에 동의해주세요');
-    } else {
-      navigate('/signup');
-    }
-  };
+  const { handleProceed } = useValidationCheck({
+    showToast,
+    validationMessage: '필수 이용약관에 동의해주세요',
+    nextRoute: `/role-selection`,
+    validationFunction: () => isPrivacyChecked && isThirdPartyChecked,
+  });
 
   return (
-    <div className='flex h-lvh w-full flex-col items-center px-[28px] pb-[30px] pt-[119px] text-textMainColor'>
+    <div className='flex h-lvh w-full flex-col items-center px-[28px] pb-[30px] text-textMainColor'>
       <div className='flex-grow'>
-        <div className='flex flex-col justify-start py-[25px]'>
-          <div className='mb-1 text-2xl font-semibold'>수행쌤</div>
-          <div className='text-2xl font-semibold'>이용약관 동의</div>
+        <div className='flex flex-col py-[25px]'>
+          <h1 className='mb-1 text-2xl font-semibold'>수행쌤</h1>
+          <h1 className='text-2xl font-semibold'>이용약관 동의</h1>
           <p className='text-sm text-captionColor'>
             원활한 서비스 제공을 위해 약관 동의가 필요합니다.
           </p>
@@ -89,12 +86,12 @@ const TermsOfService = () => {
                   className='ml-2 text-sm text-captionColor'
                   onClick={togglePrivacyTerms}
                 >
-                  {showPrivacyTerms ? '간략히' : '더보기'}
+                  더보기
                 </button>
               </div>
-              <div className={`${showPrivacyTerms ? '' : 'hidden'}`}>
+              <div>
                 <div
-                  className={`h-[126px] overflow-hidden rounded-[5px] border border-unFocusColor p-[14px] ${showPrivacyTerms ? 'overflow-scroll' : ''}`}
+                  className={`h-[126px] w-[355px] overflow-scroll rounded-[5px] border border-unFocusColor p-[14px] ${showPrivacyTerms ? '' : 'hidden'}`}
                 >
                   <Terms
                     title={privacyTerms.title}
@@ -123,12 +120,12 @@ const TermsOfService = () => {
                   className='ml-2 text-sm text-captionColor'
                   onClick={toggleThirdPartyTerms}
                 >
-                  {showThirdPartyTerms ? '간략히' : '더보기'}
+                  더보기
                 </button>
               </div>
-              <div className={`${showThirdPartyTerms ? '' : 'hidden'}`}>
+              <div>
                 <div
-                  className={`h-[126px] w-full overflow-scroll rounded-[5px] border border-unFocusColor p-[14px] ${showThirdPartyTerms ? '' : 'hidden'}`}
+                  className={`h-[126px] w-[355px] overflow-scroll rounded-[5px] border border-unFocusColor p-[14px] ${showThirdPartyTerms ? '' : 'hidden'}`}
                 >
                   <Terms
                     title={thirdPartyTerms.title}
@@ -146,7 +143,7 @@ const TermsOfService = () => {
           </div>
         </div>
       </div>
-      <Button variant='active' onClick={handleNext}>
+      <Button variant='active' onClick={handleProceed}>
         다음
       </Button>
     </div>
