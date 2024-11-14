@@ -11,6 +11,8 @@ import userActiveIcon from './navBar/teacher/user_Active.svg';
 import googleLogo from './login/google_login.svg';
 import kakaoLogo from './login/kakao_logo.png';
 import naverLogo from './login/naver_logo.svg';
+
+import editIcon from './myPage/editIcon.svg';
 export {
   backIcon,
   chatActiveIcon,
@@ -21,4 +23,5 @@ export {
   naverLogo,
   plusActiveIcon,
   userActiveIcon,
+  editIcon,
 };
