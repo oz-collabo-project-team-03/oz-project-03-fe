@@ -6,7 +6,7 @@ import { useToast } from '../../context/ToastContextProvider';
 import { useValidationCheck } from '../../hooks/useValidateAndProceed';
 import { privacyTerms, thirdPartyTerms } from '../../mocks/termsData';
 // 이용약관 페이지라는 뜻
-const TermsOfService = () => {
+const TermsOfServicePage = () => {
   const [showPrivacyTerms, setShowPrivacyTerms] = useState(false);
   const [showThirdPartyTerms, setShowThirdPartyTerms] = useState(false);
   //동의 상태
@@ -149,4 +149,4 @@ const TermsOfService = () => {
     </div>
   );
 };
-export default TermsOfService;
+export default TermsOfServicePage;
