@@ -8,9 +8,10 @@ import plusActiveIcon from './navBar/student/plus_active.svg';
 
 import userActiveIcon from './navBar/teacher/user_Active.svg';
 
-import googleLogo from './login/google_login.svg';
-import kakaoLogo from './login/kakao_logo.png';
-import naverLogo from './login/naver_logo.svg';
+import googleLogo from './auth/google_login.svg';
+import kakaoLogo from './auth/kakao_logo.png';
+import naverLogo from './auth/naver_logo.svg';
+import thumbsUPIcon from './auth/thumbs_up.svg';
 
 import editIcon from './myPage/editIcon.svg';
 
@@ -64,5 +65,6 @@ export {
   teDefaultIcon,
   teIcon2,
   teIcon3,
+  thumbsUPIcon,
   userActiveIcon,
 };
