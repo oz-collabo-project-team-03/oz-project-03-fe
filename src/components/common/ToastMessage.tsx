@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 type ToastProps = {
   message: string;
@@ -9,7 +9,7 @@ type ToastProps = {
 const ToastMessage = ({
   message,
   duration = 3000, // 기본 3초
-  onClose
+  onClose,
 }: ToastProps) => {
   const [isVisible, setIsVisible] = useState(true);
 
@@ -24,11 +24,11 @@ const ToastMessage = ({
 
   if (!isVisible) return null;
   return (
-    <div className="fixed bottom-16 left-1/2 -translate-x-1/2 z-50 animate-fade-in">
-      <div className="px-[14px] py-1 bg-commuBgColor text-textMainColor text-sm rounded ">
+    <div className='animate-fade-in fixed bottom-32 left-1/2 z-50 -translate-x-1/2'>
+      <div className='rounded bg-commuBgColor px-[14px] py-1 text-sm text-textMainColor'>
         {message}
       </div>
     </div>
   );
-}
-export default ToastMessage
+};
+export default ToastMessage;
