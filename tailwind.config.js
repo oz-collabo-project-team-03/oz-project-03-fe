@@ -26,6 +26,8 @@ export default {
         errorTextColor: "#F24822",
         deleteButtonColor: "#FF4141",
         profileSelectColor: "#9747FF",
+        profilePointTextColor: "#9E89FE",
+        postBorderColor: "#C1C1C1",
         chatListHoverColor:"#F5F6F7"
         
       },
@@ -35,6 +37,7 @@ export default {
       },
       boxShadow: {
         navShadow: '0px -4px 10px 0px rgba(142, 139, 139, 0.15)',
+        profileInfoShadow: '0px 0px 10px 0px rgba(0, 0, 0, 0.20)',
       }
 
     },
