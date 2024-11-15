@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import { twMerge } from 'tailwind-merge';
 
 type TInputProps = Omit<React.ComponentPropsWithoutRef<'input'>, 'type'> & {
   type: 'text' | 'password' | 'email' | 'number' | 'date';
@@ -28,15 +29,21 @@ const AuthInput: React.FC<TInputProps> = ({
 
   return (
     <div
-      className={`flex w-full items-center justify-between rounded-[10px] border-0 px-[14px] py-[8px] outline-none ring-1 ring-inset ${
-        isFocused ? 'ring-2 ring-inputFocusColor' : 'ring-inputBorderColor'
-      } placeholder:text-inputBorderColor`}
+      className={twMerge(
+        'flex w-full items-center justify-between rounded-[10px] border-0 px-[14px] py-[8px] outline-none ring-1 ring-inset',
+        isFocused
+          ? 'ring-2 ring-inputFocusColor'
+          : 'ring-inputBorderColor placeholder:text-inputBorderColor'
+      )}
       onClick={handleContainerClick}
       tabIndex={0}
     >
       {label && (
         <label
-          className={`${labelClassName || ''} flex-grow text-sm font-medium`}
+          className={twMerge(
+            'flex-grow text-sm font-medium',
+            labelClassName || ''
+          )}
           htmlFor={rest.id}
         >
           {label}

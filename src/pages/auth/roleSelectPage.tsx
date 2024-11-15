@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { twMerge } from 'tailwind-merge';
 import {
   roleStudentActive,
   roleStudentUnActive,
@@ -49,11 +50,12 @@ const RoleSelectPage = () => {
           </div>
           <div className='flex gap-2'>
             <div
-              className={`flex w-full cursor-pointer flex-col justify-center gap-[22px] rounded-xl px-8 py-5 ${
+              className={twMerge(
+                'flex w-full cursor-pointer flex-col justify-center gap-[22px] rounded-xl px-8 py-5',
                 isRoleActive('student')
                   ? 'bg-primaryColor/15'
                   : 'bg-unFocusColor/20'
-              }`}
+              )}
               onMouseEnter={() => setIsStudentHovered(true)}
               onMouseLeave={() => setIsStudentHovered(false)}
               onClick={() => handleRoleClick('student')}
@@ -68,21 +70,23 @@ const RoleSelectPage = () => {
               />
               <Button
                 variant='cancel'
-                className={`font-semibold ${
+                className={twMerge(
+                  'font-semibold',
                   isRoleActive('student')
                     ? 'bg-primaryHoverColor'
                     : 'hover:bg-primaryHoverColor'
-                }`}
+                )}
               >
                 학생 회원
               </Button>
             </div>
             <div
-              className={`flex w-full cursor-pointer flex-col justify-center gap-[22px] rounded-xl px-8 py-5 ${
+              className={twMerge(
+                'flex w-full cursor-pointer flex-col justify-center gap-[22px] rounded-xl px-8 py-5',
                 isRoleActive('teacher')
                   ? 'bg-primaryColor/15'
                   : 'bg-unFocusColor/20'
-              }`}
+              )}
               onMouseEnter={() => setIsTeacherHovered(true)}
               onMouseLeave={() => setIsTeacherHovered(false)}
               onClick={() => handleRoleClick('teacher')}
@@ -97,11 +101,12 @@ const RoleSelectPage = () => {
               />
               <Button
                 variant='cancel'
-                className={`font-semibold ${
+                className={twMerge(
+                  'font-semibold',
                   isRoleActive('teacher')
                     ? 'bg-primaryHoverColor'
                     : 'hover:bg-primaryHoverColor'
-                }`}
+                )}
               >
                 교사 회원
               </Button>

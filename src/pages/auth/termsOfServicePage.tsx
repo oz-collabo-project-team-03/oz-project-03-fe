@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { twMerge } from 'tailwind-merge';
 import Button from '../../components/common/Button';
 import CheckBox from '../../components/common/CheckBox';
 import Terms from '../../components/terms/Terms';
@@ -91,7 +92,10 @@ const TermsOfServicePage = () => {
               </div>
               <div>
                 <div
-                  className={`h-[126px] w-[355px] overflow-scroll rounded-[5px] border border-unFocusColor p-[14px] ${showPrivacyTerms ? '' : 'hidden'}`}
+                  className={twMerge(
+                    'h-[126px] w-[355px] overflow-scroll rounded-[5px] border border-unFocusColor p-[14px]',
+                    showPrivacyTerms ? '' : 'hidden'
+                  )}
                 >
                   <Terms
                     title={privacyTerms.title}
@@ -125,7 +129,10 @@ const TermsOfServicePage = () => {
               </div>
               <div>
                 <div
-                  className={`h-[126px] w-[355px] overflow-scroll rounded-[5px] border border-unFocusColor p-[14px] ${showThirdPartyTerms ? '' : 'hidden'}`}
+                  className={twMerge(
+                    'h-[126px] w-[355px] overflow-scroll rounded-[5px] border border-unFocusColor p-[14px]',
+                    showThirdPartyTerms ? '' : 'hidden'
+                  )}
                 >
                   <Terms
                     title={thirdPartyTerms.title}

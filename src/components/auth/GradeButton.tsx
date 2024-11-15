@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import { twMerge } from 'tailwind-merge';
 type GradeButtonProps = {
   grade: number;
   isSelected: boolean;
@@ -8,9 +9,10 @@ type GradeButtonProps = {
 
 const GradeButton = ({ grade, isSelected, onClick }: GradeButtonProps) => (
   <motion.button
-    className={`rounded-[10px] px-[34px] py-2 ${
+    className={twMerge(
+      'rounded-[10px] px-[34px] py-2',
       isSelected ? 'bg-white text-textMainColor' : 'text-textMainColor'
-    }`}
+    )}
     type='button'
     whileTap={{ scale: 0.95 }}
     onClick={onClick}
