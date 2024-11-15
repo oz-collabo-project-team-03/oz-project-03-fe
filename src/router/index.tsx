@@ -6,6 +6,7 @@ import SignupCompletePage from '../pages/auth/signupCompletePage';
 import SignupPage from '../pages/auth/signupPage';
 import TermsOfServicePage from '../pages/auth/termsOfServicePage';
 import MyPage from '../pages/myPage/myPage';
+import EditProfile from '../pages/editProfile/editProfile';
 
 const Router = () => {
   return (
@@ -14,7 +15,8 @@ const Router = () => {
         <Route element={<DefaultLayout />}>
           <Route path='*' />
           <Route path='/login' element={<LoginPage />} />
-          <Route path='/mypage' element={<MyPage />} />
+          <Route path='/my-page' element={<MyPage />} />
+          <Route path='/edit-profile' element={<EditProfile />} />
           <Route path='/member-agree' element={<TermsOfServicePage />} />
           <Route path='/role-selection' element={<RoleSelect />} />
           <Route path='/signup' element={<SignupPage />} />

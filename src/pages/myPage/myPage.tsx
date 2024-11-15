@@ -1,5 +1,6 @@
 import { editIcon, stDefaultIcon } from '../../assets/assets';
 import postTestImg from '../../../src/assets/profileEdit/postTestImg.png';
+import { Link } from 'react-router-dom';
 
 const MyPage = () => {
   // 프로필 정보
@@ -44,11 +45,13 @@ const MyPage = () => {
               alt='학생 기본 이미지'
               className='h-full w-full'
             />
-            <img
-              src={editIcon}
-              alt='프로필 수정 아이콘'
-              className='absolute bottom-0 right-0'
-            />
+            <Link to='edit-profile'>
+              <img
+                src={editIcon}
+                alt='프로필 수정 아이콘'
+                className='absolute bottom-0 right-0'
+              />
+            </Link>
           </li>
           <li className='flex flex-col items-center'>
             <p className='text-xl font-bold text-textMainColor'>
@@ -64,12 +67,12 @@ const MyPage = () => {
           {communityInfo.map((info, index) => (
             <li
               key={index}
-              className='shadow-profileInfoShadow flex h-[50px] w-[83px] flex-col items-center justify-center rounded-[10px]'
+              className='flex h-[50px] w-[83px] flex-col items-center justify-center rounded-[10px] shadow-profileInfoShadow'
             >
               <p className='text-[13px] font-normal text-textMainColor'>
                 {info.label}
               </p>
-              <p className='text-profilePointTextColor text-[15px] font-bold'>
+              <p className='text-[15px] font-bold text-profilePointTextColor'>
                 {info.value}
               </p>
             </li>
@@ -83,7 +86,7 @@ const MyPage = () => {
             {postImg.map((img) => (
               <div
                 key={img}
-                className='border-postBorderColor h-[97px] w-[97px] overflow-hidden border'
+                className='h-[97px] w-[97px] overflow-hidden border border-postBorderColor'
               >
                 <img
                   src={img}
