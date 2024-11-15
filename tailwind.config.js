@@ -17,6 +17,7 @@ export default {
         commuInputColor: "#F5F6F7",
         borderColor: "#F2EFFF",
         repleText: "#494949",
+        chatText: "#646464",
         cancelButtonColor: "#C6C6C6",
         captionColor: "#A8A8A8",
         unFocusColor: "#D9D9D9",
