@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { googleLogo, kakaoLogo, naverLogo } from '../../assets/assets';
 import Button from '../../components/common/Button';
 import Input from '../../components/common/Input';
@@ -31,7 +32,9 @@ const LoginPage = () => {
           <span className='inline-block h-[14px] w-[1px] bg-inputBorderColor'></span>
           <p className='cursor-pointer'>비밀번호 찾기</p>
           <span className='inline-block h-[14px] w-[1px] bg-inputBorderColor'></span>
-          <p className='cursor-pointer'>회원가입</p>
+          <Link to='/member-agree'>
+            <p className='cursor-pointer'>회원가입</p>
+          </Link>
         </div>
         <div className='mt-5 flex flex-row justify-center gap-x-[36px]'>
           {socialLogin.map(({ name, src, url }) => (
